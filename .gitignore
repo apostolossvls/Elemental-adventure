@@ -58,3 +58,13 @@ sysinfo.txt
 # Crashlytics generated file
 crashlytics-build.properties
 Assets/DisplaySceneFolder/Wispy Sky/Demo/Demo.unity
+Assets/DisplaySceneFolder/Wispy Sky/Extras/SphericalRenderPSD.psd
+Assets/DisplaySceneFolder/Wispy Sky/Materials/WispySkyboxCubeMat2.mat
+Assets/DisplaySceneFolder/Wispy Sky/Materials/WispySkyboxCubeMat.mat
+Assets/DisplaySceneFolder/Wispy Sky/Materials/WispyCubemap2.cubemap
+Assets/DisplaySceneFolder/Wispy Sky/Materials/WispyCubemap.cubemap
+Assets/DisplaySceneFolder/Wispy Sky/Materials/WispySkyboxMat2.mat
+Assets/DisplaySceneFolder/Wispy Sky/Materials/WispySkyboxMat.mat
+Assets/DisplaySceneFolder/Wispy Sky/ReadMe.txt
+Assets/DisplaySceneFolder/Wispy Sky/Materials/WispySkyboxMobileMat.mat
+Assets/DisplaySceneFolder/Wispy Sky/Materials/WispySkyboxMobileMat2.mat

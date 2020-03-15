@@ -1,0 +1,217 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &238988547520611200
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4940251616118537971}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 220b640583ff44e46b33ae98745e9b17, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  col: {fileID: 0}
+  animator: {fileID: 0}
+  JumpForce: 400
+  GlideForce: -50
+  Gravity: 14
+  HoldNeeded: 1
+--- !u!114 &2103414123938649916
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4940251616118537971}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd3dc6524cc31cd49872d14759314045, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 0}
+  waterProjectilePrefab: {fileID: 3789324134429288460, guid: 0cf4ebd6f509b8c4c8bcebec15de10bf,
+    type: 3}
+  sourceObject: {fileID: 8223416262837937867}
+  cooldown: 1
+  timeBeforeEvent: 0.15
+  waterForce: 500
+--- !u!1001 &7529895519570306265
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 238438265253509542, guid: 8bd545ee38e88604a8561bca79aea4eb,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6182001b018e46f43b6ae6af185775f1, type: 2}
+    - target: {fileID: 1012046579510344515, guid: 8bd545ee38e88604a8561bca79aea4eb,
+        type: 3}
+      propertyPath: tags.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1012046579510344515, guid: 8bd545ee38e88604a8561bca79aea4eb,
+        type: 3}
+      propertyPath: tags.Array.data[1]
+      value: DestroyableFire
+      objectReference: {fileID: 0}
+    - target: {fileID: 1012046579510344515, guid: 8bd545ee38e88604a8561bca79aea4eb,
+        type: 3}
+      propertyPath: tags.Array.data[2]
+      value: Enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 1012046580138041482, guid: 8bd545ee38e88604a8561bca79aea4eb,
+        type: 3}
+      propertyPath: tags.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1012046580138041482, guid: 8bd545ee38e88604a8561bca79aea4eb,
+        type: 3}
+      propertyPath: tags.Array.data[1]
+      value: DestroyableFire
+      objectReference: {fileID: 0}
+    - target: {fileID: 1012046580138041482, guid: 8bd545ee38e88604a8561bca79aea4eb,
+        type: 3}
+      propertyPath: tags.Array.data[2]
+      value: Enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 1900767058369617464, guid: 8bd545ee38e88604a8561bca79aea4eb,
+        type: 3}
+      propertyPath: m_Name
+      value: WaterElemental Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 1900767058369617468, guid: 8bd545ee38e88604a8561bca79aea4eb,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1900767058369617468, guid: 8bd545ee38e88604a8561bca79aea4eb,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1900767058369617468, guid: 8bd545ee38e88604a8561bca79aea4eb,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1900767058369617468, guid: 8bd545ee38e88604a8561bca79aea4eb,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1900767058369617468, guid: 8bd545ee38e88604a8561bca79aea4eb,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1900767058369617468, guid: 8bd545ee38e88604a8561bca79aea4eb,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1900767058369617468, guid: 8bd545ee38e88604a8561bca79aea4eb,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1900767058369617468, guid: 8bd545ee38e88604a8561bca79aea4eb,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1900767058369617468, guid: 8bd545ee38e88604a8561bca79aea4eb,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1900767058369617468, guid: 8bd545ee38e88604a8561bca79aea4eb,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1900767058369617468, guid: 8bd545ee38e88604a8561bca79aea4eb,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1900767058776961536, guid: 8bd545ee38e88604a8561bca79aea4eb,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 79262b9f0e1d07f41acea834984f4bcd, type: 2}
+    - target: {fileID: 1900767058776961543, guid: 8bd545ee38e88604a8561bca79aea4eb,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1900767058797447187, guid: 8bd545ee38e88604a8561bca79aea4eb,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1900767058797447196, guid: 8bd545ee38e88604a8561bca79aea4eb,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6182001b018e46f43b6ae6af185775f1, type: 2}
+    - target: {fileID: 1900767059125666760, guid: 8bd545ee38e88604a8561bca79aea4eb,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1900767059125666761, guid: 8bd545ee38e88604a8561bca79aea4eb,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: b68ab4f575be11b4b941a69c87973dd5, type: 2}
+    - target: {fileID: 1900767059211817465, guid: 8bd545ee38e88604a8561bca79aea4eb,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6182001b018e46f43b6ae6af185775f1, type: 2}
+    - target: {fileID: 1900767059270514741, guid: 8bd545ee38e88604a8561bca79aea4eb,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6182001b018e46f43b6ae6af185775f1, type: 2}
+    - target: {fileID: 1900767059754287633, guid: 8bd545ee38e88604a8561bca79aea4eb,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1900767059754287633, guid: 8bd545ee38e88604a8561bca79aea4eb,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1900767059754287633, guid: 8bd545ee38e88604a8561bca79aea4eb,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3238330848734370346, guid: 8bd545ee38e88604a8561bca79aea4eb,
+        type: 3}
+      propertyPath: m_Name
+      value: WaterElemental
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 669233120849633804, guid: 8bd545ee38e88604a8561bca79aea4eb, type: 3}
+    - {fileID: 4600896322026464798, guid: 8bd545ee38e88604a8561bca79aea4eb, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: 8bd545ee38e88604a8561bca79aea4eb, type: 3}
+--- !u!1 &4940251616118537971 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3238330848734370346, guid: 8bd545ee38e88604a8561bca79aea4eb,
+    type: 3}
+  m_PrefabInstance: {fileID: 7529895519570306265}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &8223416262837937867 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1900767059754287634, guid: 8bd545ee38e88604a8561bca79aea4eb,
+    type: 3}
+  m_PrefabInstance: {fileID: 7529895519570306265}
+  m_PrefabAsset: {fileID: 0}
