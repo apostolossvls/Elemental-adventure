@@ -4,14 +4,12 @@ using UnityEngine;
 
 public class FootStepsParticles1 : MonoBehaviour
 {
-    public Transform feet;
-    public bool activated = true;
     ParticleSystem ps;
     ParticleSystem.ShapeModule shape;
 
     void Start()
     {
-        ps = GetComponent<ParticleSystem>();
+        ps = transform.parent.GetComponent<ParticleSystem>();
         shape = ps.shape;
 
         RaycastHit hit;
@@ -30,25 +28,9 @@ public class FootStepsParticles1 : MonoBehaviour
         pixelUV.y *= tex.height;
 
         Color c = tex.GetPixel((int)pixelUV.x, (int)pixelUV.y);
+        Debug.Log(c.ToString());
 
         ParticleSystem.MainModule psm = ps.main;
         psm.startColor = c;
-    }
-
-    void Update()
-    {
-        if (activated)
-        {
-            shape.position = new Vector3(feet.position.x, feet.position.z, feet.position.y);
-            shape.rotation = new Vector3(shape.rotation.x, shape.rotation.y, feet.rotation.eulerAngles.y);
-        }
-
-        //tex.SetPixel((int)pixelUV.x, (int)pixelUV.y, Color.black);
-        //tex.Apply();
-    }
-
-    public void ChangeTarget(Transform t)
-    {
-        feet = t;
     }
 }

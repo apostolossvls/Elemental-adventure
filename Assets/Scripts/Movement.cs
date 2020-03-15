@@ -44,7 +44,7 @@ public class Movement : MonoBehaviour
             transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(movement), Time.deltaTime * rotationSpeed);
             if (footstepsPrefab & footstepPivot)
             {
-                GameObject g = GameObject.Instantiate(footstepsPrefab, footstepPivot.position, footstepPivot.rotation);
+                GameObject g = GameObject.Instantiate(footstepsPrefab, footstepPivot.position + new Vector3(0,-0.5f,0), footstepPivot.rotation);
                 Destroy(g, 5f);
             }
         }
